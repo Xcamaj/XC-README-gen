@@ -1,5 +1,6 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer')
+const fs = require('fs')
 // TODO: Create an array of questions for user input
 const questions = inquirer.prompt([
     {
@@ -75,7 +76,7 @@ const questions = inquirer.prompt([
     },
     {
         type: 'input',
-        name: 'Questions',
+        name: 'Username',
         message: 'Enter your Github username.',
          validate: value => {
             if (value) {
@@ -101,12 +102,12 @@ const questions = inquirer.prompt([
     }
 
 ]);
-questions
+
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) { }
 
 // TODO: Create a function to initialize app
 function init() { }
 
-// Function call to initialize app
+//Function call to initialize app
 init();
