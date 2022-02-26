@@ -63,7 +63,8 @@ ${data.Description}
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
-* [Questions](#question)
+* [Contributors](#contributors)
+* [Questions](#questions)
 
 ## Installation
 ${data.Installation}
