@@ -16,9 +16,10 @@ x
 x
 
 ## License
-MIT
+Apache 2.0
 
 ## Contact
-* Github: [github.com/xcamaj](https://github.com/xcamaj)
+For any questions please reach me at:
+* Github: [github.com/x](https://github.com/x)
 * E-mail: x
 
