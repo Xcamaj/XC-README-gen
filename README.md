@@ -7,7 +7,7 @@ x
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
-* [Contact](#contact)
+* [Questions](#question)
 
 ## Installation
 x
@@ -15,11 +15,14 @@ x
 ## Usage 
 x
 
-## License
-Apache 2.0
+ 
 
-## Contact
-For any questions please reach me at:
+
+## Contributors
+x
+
+## Questions
+For any questions please reach out at:
 * Github: [github.com/x](https://github.com/x)
 * E-mail: x
 

@@ -1,19 +1,58 @@
 const inquirer = require('inquirer')
 const fs = require('fs')
 const index = require('../index')
-// // TODO: Create a function that returns a license badge based on which license is passed in
-// // If there is no license, return an empty string
-// function renderLicenseBadge(license) { }
 
-// // TODO: Create a function that returns the license link
-// // If there is no license, return an empty string
-// function renderLicenseLink(license) { }
+function renderLicenseLink(License) {
+    let link = ''
+    if (License === 'Apache 2.0') {
+        link = 'https://www.apache.org/licenses/LICENSE-2.0'
+    } else if (License === 'BSD 3-Clause') {
+        link = 'https://opensource.org/licenses/BSD-3-Clause'
+    } else if (License === 'GNU') {
+        link = 'https://www.gnu.org/licenses/licenses.en.html'
+    } else if (License === 'MIT') {
+        link = 'https://opensource.org/licenses/MIT'
+    } else if (License === 'Mozilla') {
+        link = 'https://www.mozilla.org/en-US/MPL/'
+    } else if (License === 'Eclipse') {
+        link = 'https://www.eclipse.org/legal/epl-v10.html'
+    } else {
+        link = ''
+    }
+    return link
+}
 
-// // TODO: Create a function that returns the license section of README
-// // If there is no license, return an empty string
-// function renderLicenseSection(license) { }
+function renderLicenseBadge(License) {
+    let badge = ''
+    if (License === 'Apache 2.0') {
+        badge = '![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)'
+    } else if (License === 'BSD 3-Clause') {
+        badge = '![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)'
+    } else if (License === 'GNU') {
+        badge = '![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)'
+    } else if (License === 'MIT') {
+        badge = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)'
+    } else if (License === 'Mozilla') {
+        badge = '![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)'
+    } else if (License === 'Eclipse') {
+        badge = '![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)'
+    } else {
+        badge = ''
+    }
+    return badge
+}
 
-// TODO: Create a function to generate markdown for README
+function renderLicenseSection(License) {
+    let licenseSection = ''
+    if (License === 'None') {
+        licenseSection = ''
+    } else {
+        licenseSection = `## License: ${License}`
+    }
+    return licenseSection
+}
+
+
 function generateMarkdown(data) {
     return `# ${data.Title}
 
@@ -24,7 +63,7 @@ ${data.Description}
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
-* [Contact](#contact)
+* [Questions](#question)
 
 ## Installation
 ${data.Installation}
@@ -32,10 +71,13 @@ ${data.Installation}
 ## Usage 
 ${data.Usage}
 
-## License
-${data.License}
+${renderLicenseSection(data.License)} ${renderLicenseBadge(data.License)}
+${renderLicenseLink(data.License)}
 
-## Contact
+## Contributors
+${data.Contributors}
+
+## Questions
 For any questions please reach out at:
 * Github: [github.com/${data.Username}](https://github.com/${data.Username})
 * E-mail: ${data.Email}

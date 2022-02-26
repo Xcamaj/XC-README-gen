@@ -66,12 +66,17 @@ const questions = ([
         type: 'list',
         message: 'What license is being used?',
         name: 'License',
-        choices: ['Apache 2.0', 'BSD 3-Clause', 'GNU', 'MIT', 'Mozilla', 'Eclipse'],
+        choices: ['Apache 2.0', 'BSD 3-Clause', 'GNU', 'MIT', 'Mozilla', 'Eclipse', 'None'],
+    },
+    {
+        type: 'input',
+        name: 'Contributors',
+        message: 'Enter contributor(s)',
         validate: value => {
             if (value) {
                 return true
             } else {
-                console.log("Please check what license was used!")
+                console.log('Enter at least 1 contributor.')
                 return false
             }
         }
@@ -125,12 +130,12 @@ const writeToFile = fileName => {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
-    .then(function(data){
-        console.log(data)
-        var fileName = generateMarkdown(data)
-        writeToFile(fileName)
+        .then(function (data) {
+            console.log(data)
+            var fileName = generateMarkdown(data)
+            writeToFile(fileName)
 
-    })
+        })
 }
 
 //Function call to initialize app
