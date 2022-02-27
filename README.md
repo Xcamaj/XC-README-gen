@@ -7,7 +7,8 @@ This project allows the user to create their own unique README file. The user is
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
-* [Questions](#question)
+* [Contributors](#contributors)
+* [Questions](#questions)
 
 ## Installation
 Node and Inquirer.
@@ -19,10 +20,10 @@ Run "node index" in the command line and fill out the questions.
 https://opensource.org/licenses/MIT
 
 ## Contributors
-Xhemajl Camaj
+Made By Xhemajl Camaj
 
 ## Questions
 For any questions please reach out at:
-* Github: [github.com/Xcamaj](https://github.com/Xcamaj)
-* E-mail: Xhemajlcamaj@gmail.com
+* Github: [github.com/xcamaj](https://github.com/xcamaj)
+* E-mail: xhemajlcamaj@gmail.com
 
