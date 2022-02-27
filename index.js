@@ -32,9 +32,10 @@ const questions = ([
         }
     },
     {
-        type: 'input',
+        type: 'confirm',
         name: 'Table of Contents',
-        message: 'Table of Contents.'
+        message: 'Add Table of Contents.',
+        default: true
     },
     {
         type: 'input',

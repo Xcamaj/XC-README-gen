@@ -11,7 +11,7 @@ This project allows the user to create their own unique README file. The user is
 * [Questions](#questions)
 
 ## Installation
-Node and Inquirer.
+Node and Inquirer
 
 ## Usage 
 Run "node index" in the command line and fill out the questions.
@@ -24,6 +24,6 @@ Made By Xhemajl Camaj
 
 ## Questions
 For any questions please reach out at:
-* Github: [github.com/xcamaj](https://github.com/xcamaj)
-* E-mail: xhemajlcamaj@gmail.com
+* Github: [github.com/Xcamaj](https://github.com/Xcamaj)
+* E-mail: Xhemajlcamaj@gmail.com
 
