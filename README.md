@@ -26,7 +26,7 @@ Run "node index" in the command line and fill out the questions.
 https://opensource.org/licenses/MIT
 
 ## Demo
-![Demo](https://drive.google.com/file/d/1cjA_7TEJZfBKZO9P5JlR1qT-BMTt4hE3/view)
+https://drive.google.com/file/d/1cjA_7TEJZfBKZO9P5JlR1qT-BMTt4hE3/view
 ## Contributors
 Made By Xhemajl Camaj
 
